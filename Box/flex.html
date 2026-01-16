@@ -1,0 +1,57 @@
+<!-- 8-1 Recap Flex , Responsiveness & media query -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex</title>
+
+<style>
+.container{
+  display: flex;
+  gap: 20px;
+}
+.box{
+  background-color: green;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 576px) {
+  .container{
+    flex-direction: column;
+  }
+}
+</style>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="box">
+      <h3>box-1</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio doloremque veniam sunt repudiandae, error
+        adipisci obcaecati vero facere amet sequi?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium
+        sunt suscipit architecto veritatis nihil enim sapiente odio reiciendis necessitatibus alias?Lorem ipsum dolor,
+        sit amet consectetur adipisicing elit. Cupiditate eveniet nostrum omnis fuga at, provident error maxime
+        aspernatur vel ipsum libero itaque dignissimos deleniti? Autem exercitationem quam expedita provident fuga!</p>
+    </div>
+
+    <div class="box">
+      <h3>box-1</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio doloremque veniam sunt repudiandae, error
+        adipisci obcaecati vero facere amet sequi?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium
+        sunt suscipit architecto veritatis nihil enim sapiente odio reiciendis necessitatibus alias?Lorem ipsum dolor,
+        sit amet consectetur adipisicing elit. Cupiditate eveniet nostrum omnis fuga at, provident error maxime
+        aspernatur vel ipsum libero itaque dignissimos deleniti? Autem exercitationem quam expedita provident fuga!</p>
+    </div>
+  </div>
+</body>
+
+</html>
